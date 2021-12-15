@@ -27,8 +27,8 @@ class Event
      */
     public function registerEvent(string $event) :void
     {
-        if (!!$this->isEventSet($event)) {
-            array_push(static::$events, $event);
+        if (!$this->isEventSet($event)) {
+            static::$events[$event] = [];
         }
     }
 
