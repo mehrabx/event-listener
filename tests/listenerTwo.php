@@ -6,11 +6,11 @@ namespace Mehrabx\eventListenr\Tests;
 
 use Mehrabx\eventListenr\Contracts\ListenerInterface;
 
-class listenerOne implements ListenerInterface
+class listenerTwo implements ListenerInterface
 {
 
     public function update($data)
     {
-        EventTest::$listenerValues['object'] =  'something';
+        EventTest::$listenerValues['objectListenerTwo'] =  'something'.$data[0].$data[1];
     }
 }

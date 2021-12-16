@@ -8,6 +8,6 @@ class ListenerNotImplementsListenerInterface
 {
     public function update()
     {
-        echo 'something';
+        EventTest::$listenerValues['object'] =  'something';
     }
 }
