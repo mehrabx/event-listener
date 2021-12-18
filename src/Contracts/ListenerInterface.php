@@ -18,6 +18,6 @@ interface ListenerInterface
      *
      * @return mixed
      */
-    public function update($data);
+    public function update($data = null);
 
 }

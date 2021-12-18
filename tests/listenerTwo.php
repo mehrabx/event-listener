@@ -9,7 +9,7 @@ use Mehrabx\eventListenr\Contracts\ListenerInterface;
 class listenerTwo implements ListenerInterface
 {
 
-    public function update($data)
+    public function update($data = null)
     {
         EventTest::$listenerValues['objectListenerTwo'] =  'something'.$data[0].$data[1];
     }
